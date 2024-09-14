@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Destiny";
+  src: url('../../assets/fonts/The-Destiny.woff') format('woff'),
+       url('../../assets/fonts/The-Destiny.woff2') format('woff2');
+}
+
+.navbarContainer {
+  position: fixed; /* Cambia de relative a fixed */
+  top: 0; /* Asegura que el navbar esté en la parte superior de la página */
+  left: 0;
+  width: 100%;
+  z-index: 3; /* Asegura que el navbar esté encima del HeroSection */
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Fondo transparente por defecto */
+  color: white;
+  transition: background-color 0.3s ease; /* Añade una transición suave */
+}
+
+
+
+.logoContainer {
+  align-items: center;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbarToggle {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.navbarToggle button {
+  margin: 10px;
+  margin-top: 35px;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+.navbarToggleOpen {
+  margin-top: -5px;
+}
+
+.navbarText {
+  display: flex;
+  gap: 9px;
+  font-weight: 400;
+  font-size: 1.9rem;
+  font-family: "'Cormorant Garamond',serif";
+}
+
+.font {
+  font-family: "Destiny";
+  font-size: 1.9rem;
+  
+
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  padding: 10px 0;
+}
+
+.lista li {
+  margin-left: 7vw;
+  margin-right: 7vw;
+  font-weight: lighter;
+  font-size: 2.5vh;
+  transition: color 1.5s ease;
+}
+.lista li:hover {
+  color: #D7C8EF;
+}
+
+
+
+.menu-transition-enter {
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.menu-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 800ms, transform 400ms;
+}
+
+.menu-transition-exit {
+  opacity: 100%;
+  transform: translateY(-0.5%);
+}
+
+.menu-transition-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 4500ms;
+}
+
+@media (max-width: 390px) {
+  .navbarText {
+    font-size: 8vw;
+  }
+  .font {
+    font-size: 40px;
+  }
+  .prueba {
+    width: 8vw;
+  }
+  .navbarToggle button {
+    margin-top: 39px;
+  }
+}
+@media (min-width: 900.98px) {
+  .navbarText {
+    gap: 5px;
+    font-size: 1.5rem;
+  }
+  .navbarContainer.scrolled{
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente al desplazarse */
+  }
+  .font {
+    font-size: 35px;
+  }
+  .logoContainer{
+    display: block;
+  }
+  .navbarToggle {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: right; /* Centra las opciones en la fila */
+    align-items: center;
+    flex: 1;
+    
+  }
+
+  .desktop-menu .lista {
+    flex-direction: row; /* Cambia la dirección del flex a fila */
+    margin: 0; /* Ajusta los márgenes si es necesario */
+  }
+
+  .desktop-menu .lista li {
+    margin-left: 1vw; /* Ajusta el margen para los ítems */
+    margin-right: 1vw;
+    font-size: 1.45vw; /* Ajusta el tamaño de fuente para pantallas grandes */
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .navbarContainer .lista li.active button {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+  
+}
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+.navbarContainer .lista li a {
+  color: white; /* color por defecto */
+  text-decoration: none;
+}
+
+.navbarContainer .lista li.active a {
+  color: #f0f0f0; /* color para la opción activa */
+  font-weight: bold; /* opcional, para hacer más visible la opción activa */
+}
+
+/* Ejemplo de estilos para el ítem activo */
+.navbarContainer .menu .lista li.active button {
+  color: #D7C8EF; /* Cambia el color del texto activo */
+  text-decoration: underline;
+ /* Estilo adicional para el ítem activo */
+}
+.navbarContainer .lista li a {
+  color: white;
+  text-decoration: none;
+}
+/* Tu CSS existente */
+.navbarContainer .lista li.active a {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.navbarContainer .lista li.active button {
+  color: #D7C8EF;
+  text-decoration: underline;
+}

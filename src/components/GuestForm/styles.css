@@ -1,0 +1,215 @@
+.form-container{
+    justify-content: center;
+    margin: 25px 0;
+}
+.form-container input{
+    background: rgba(255, 255, 255, 0.2);
+    border: none !important;
+    color: #fff;
+    font-size: 16px !important;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-weight: 100;
+}
+.form-container input:focus{
+    background: rgba(255, 255, 255, 0.25);
+    outline: none;
+}
+.form-container input::placeholder{
+    color: white;
+    font-weight: 100;
+
+}
+.form-container select{
+    color: black;
+}
+/* Estilos para el input con error */
+input.error {
+    border: 1px solid red !important;
+  }
+  
+  /* Mensaje de error */
+.error-message {
+    margin: 0;
+    color: red;
+    font-size: 18px !important;
+    font-weight: 300;
+    text-align: start;
+}
+.ticket-control{
+    background: rgba(255, 255, 255, 0.2);
+    border: none !important;
+    color: #fff;
+    font-size: 16px !important;
+    height: 64px;
+    transition: 0.5s;
+    border-radius: 4px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ticket-btn{
+    margin: 0 25px;
+    font-weight: 300;
+  }
+  .minus{
+    font-size: 40px;
+  }
+  .plus{
+    font-size: 25px;
+  }
+
+  .inputs-container{
+    margin: 15px 0;
+  }
+
+  .attendance-option{
+    width: auto !important;
+    margin: 0 5px 0 0;
+  }
+  .attendance-label{
+    display: flex;
+    margin: 0 15px;
+    font-weight: 100;
+   /* Cambiar a row si deseas alinearlos en una línea */
+    align-items: center;
+    flex-direction: row;
+  }
+.button-container{
+  width: auto;
+}
+.button-send{
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 1.3;
+  border-radius: 0px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 1s;
+  text-align: center;
+}
+
+.button-send:hover{
+  background-color: #F2EDE7;
+  color: black;
+}
+.form-group{
+  width: 100% !important;
+margin-bottom: 10px;
+font-family: 'Karla', sans-serif;
+font-size: 22px;
+color: #fff;
+}
+
+.attendance-container h5{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.attendance-container{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */
+  align-items: center; /* Centra horizontalmente */
+  width: 100%;
+  
+}
+.attendace-label-container{
+  display: flex; /* Usa flexbox para alinear los elementos en línea */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+   /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+  flex-direction: row ;
+}
+
+.guests-list{
+  background-color: #fff;
+  color: black;
+  text-align: start;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 300;
+}
+.guests-list li:hover{
+  background-color: #a09780;
+  color: #F2EDE7;
+}
+.guests-list li{
+  padding: 0 8px;
+}
+.guest-list-container{
+  position: relative;
+  width: 100%;
+  
+}
+
+@media (min-width: 767.98px) {
+  form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .name-container {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+  }
+  
+  .ticket-control {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+  }
+  
+  /* Estilo para la fila 2: Teléfono y Confirmación de Asistencia */
+  .tel-container {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+  }
+  
+  .attendance-container {
+   /* Ocupa ambas columnas */
+  display: flex;
+  flex-direction: column; /* Alinea el contenido en columna */
+  align-items: flex-start;
+  }
+  
+  /* Estilo para la fila 3: Botón de Enviar */
+  .button-container {
+    grid-column: 1 / 3; /* Ocupa ambas columnas */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el botón de enviar */
+  }
+  .inputs-container{
+    margin: 2px 0;
+  }
+  .ad-message{
+    display: none;
+  }
+}
+@media (max-width: 575.98px){
+  .ad-message{
+    font-size: 3vw !important;
+  }
+}
+.ad-message{
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: 2.5vw;
+  text-align: justify;
+}

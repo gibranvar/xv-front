@@ -1,0 +1,144 @@
+html{
+  background-color: #D7C8EF;
+}
+html body{
+overflow-x: hidden; 
+}
+body{
+font-family: 'Karla', sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.3;
+color: #F9F4F1;
+}
+.bwFilter{
+  filter: grayscale(100%);
+}
+
+h1, h2, h3, h4, h5, h6{
+/* font-family: 'Cormorant Garamond', serif !important; */
+font-family: 'Paristiwa', sans;
+font-weight: 400 !;
+color:#F9F4F1;
+}
+/* breakpoints = {
+  xxs: '400.98px',
+  xs: '575.98px',
+  sm: '767.98px',
+  md: '991.98px',
+  lg: '1199.98px',
+  xl: '1600px',
+}; */
+.title-card{
+  margin: 0 auto 15px auto;
+  max-width: 65%;   
+  padding: 0 10px;
+}
+.title-rsvp{
+font-size: 7vw;
+font-weight:100;
+z-index: 2;
+position: relative;
+color: white;
+}
+.title-dresscode{
+margin: 0 auto 5px auto;
+max-width: 65%;   
+color: white;
+}
+.title-itinerary{
+
+margin: 0 auto 15px auto;
+max-width: 65%;   
+color: white;
+}
+.title-gallery{
+max-width: 70%;  
+}
+.title-calendar{
+margin: 0 auto 15px auto;
+max-width: 35%;   
+color: white;
+}
+@media (max-width: 575.98px) {
+  .title-card{
+    max-width: 80%;
+  }
+  .title-rsvp{
+    font-size: 7.9vw;
+  }
+  .title-dresscode{
+    max-width: 80%;
+  }
+  .title-itinerary{
+    max-width: 80%;
+  }
+  .title-gallery{
+    max-width: 90%;  
+  }
+  .title-calendar{
+    max-width: 45%;
+  }
+  .title-timer-container{
+    margin: 20px 20vw 0 20vw !important;
+  }
+  .title-timer{
+    line-height: 5vw !important;
+    font-size: 5vw !important;
+
+  }
+}
+
+
+@media (min-width: 992.98px) {
+.title-card{
+  max-width: 65%;  
+}
+.title-rsvp{
+  font-size: 5.4vw;
+}
+.title-dresscode{
+  max-width: 45%;
+}
+.title-itinerary{
+  max-width: 48%;
+}
+.title-gallery{
+  max-width: 55%;  
+}
+.title-calendar{
+  max-width: 25%;
+}
+.title-timer-container{
+  margin: 20px 35vw 0 35vw !important;
+}
+.title-timer{
+  line-height: 2.8vw !important;
+  font-size: 2.5vw !important;
+}
+}
+
+.slide-out-top {
+animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+@keyframes slide-out-top {
+0% {
+  transform: translateY(0);
+  opacity: 1;
+}
+100% {
+  transform: translateY(-1000px);
+  opacity: 0;
+}
+}
+.title-timer-container{
+  margin: 20px 25vw 0 25vw;
+}
+.title-timer{
+  font-family: 'Cormorant Garamond',serif;
+  line-height: 4vw;
+  font-size: 3.5vw;
+  font-weight: 100;
+}

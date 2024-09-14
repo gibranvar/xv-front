@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Paristiwa";
+    src: url("./assets/fonts/Peristiwa.woff") format('woff'),
+    url("./assets/fonts/Peristiwa.woff2") format('woff2') ;
+    }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+  }
