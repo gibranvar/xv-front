@@ -96,8 +96,8 @@ const RsvpSection: React.FC<RsvpSectionProps> = ({
         <RsvpSectionContainer>
              <Overlay/>
             <RsvpSectionTitle className="title-rsvp">{title}</RsvpSectionTitle>
-            <RsvpSectionSubtitle>¡Queremos compartir este momento tan esperado contigo! <br />
-            <span>Por favor ayúdanos confirmando tu asistencia antes del <strong>1 Marzo de 2025.</strong></span>  </RsvpSectionSubtitle>
+            <RsvpSectionSubtitle>¡Quiero compartir este momento tan esperado contigo! <br />
+            <span>Por favor ayúdame confirmando tu asistencia antes del <strong>5 Octubre de 2024.</strong></span>  </RsvpSectionSubtitle>
             <RsvpSectionDescription><br />Escribe las <strong>primeras 3 letras</strong> de tu nombre y da clic en la sugerencia que aparecerá desplegada. Si  te asignaron boletos para acompañantes, el número se completará automáticamente. Puedes <em>mantener o reducir</em> la cantidad de invitados que asistirán contigo (ajusta esta cantidad a 0 si prefieres no llevar acompañantes). Antes de dar clic en "ENVIAR", verifica que todo este correcto, ya que una vez enviado no se podrá modificar. </RsvpSectionDescription>
             <FormContainer>
                 <GuestForm/>

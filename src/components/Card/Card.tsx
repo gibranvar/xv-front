@@ -75,6 +75,7 @@ const CardBottom = styled.div`
     position: relative;
     z-index: 0;
     text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     @media (max-width: ${breakpoints.xxs}) {
         padding: 25px;
     }

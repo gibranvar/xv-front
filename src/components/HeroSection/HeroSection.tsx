@@ -127,7 +127,7 @@ const HeroSection = () => {
         <StyledLogo src={Logo} />
         <Date>MIS XV'S</Date>
         <Subtitle>ALISON CHELSY</Subtitle>
-        <Message>12.10.2025</Message>
+        <Message>12.10.2024</Message>
       </TextContainer>
     </HeroSectionContainer>
   );
