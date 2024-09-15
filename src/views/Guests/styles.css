@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: black;
 }
 .guest-table{
     margin: 15px;
